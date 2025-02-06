@@ -1,0 +1,338 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+header {
+    background-color: #087356;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.header-title {
+    background-color: #087356; /* Purple background */
+    color: white; /* White text */
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%; /* Adjusts to container width */
+    max-width: 95%; /* Ensures it fits within content */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table tr td:last-child {
+    font-weight: bold;
+}
+
+/* Highlight probation employees */
+table tr[style*="background-color: #ffdddd;"] {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Floating notification styles */
+.floating-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffdddd;
+    color: #d9534f;
+    padding: 20px;
+    border: 2px solid #d9534f;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    z-index: 1000;
+    font-size: 16px;
+}
+
+.floating-notification h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.floating-notification ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.floating-notification ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.floating-notification button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.floating-notification button:hover {
+    background-color: #c12e2a;
+}
+
+/* Success notification styles */
+.success {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .floating-notification {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .floating-notification button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .floating-notification h4 {
+        font-size: 16px;
+    }
+
+    .floating-notification ul li {
+        font-size: 12px;
+    }
+}
+/* Side Navigation Bar */
+.sidenav {
+    height: 100%; /* Full height */
+    width: 250px; /* Fixed width */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Dark background color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Padding at the top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.sidenav a {
+    padding: 10px 15px; /* Add padding */
+    text-decoration: none;
+    font-size: 16px; /* Bigger text */
+    color: white; /* White text color */
+    display: block; /* Make it full-width */
+}
+
+.sidenav a:hover {
+    background-color: #2f00ff; /* Lighter background on hover */
+    color: white; /* Keep text white */
+}
+
+/* Main content section */
+.main {
+    margin-left: 260px; /* Same as sidenav width + 10px padding */
+    padding: 20px; /* Add padding for content */
+}
+/* Side Navigation Bar */
+.sidenav {
+    height: 100%; /* Full height */
+    width: 250px; /* Fixed width */
+    position: fixed; /* Stay in place */
+    top: 0;
+    left: 0;
+    background-color: #124f37; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Padding at the top */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.sidenav a {
+    padding: 15px 20px; /* Add padding */
+    text-decoration: none;
+    font-size: 18px; /* Bigger text */
+    color: #ecf0f1; /* Light grey text color */
+    display: block; /* Make it full-width */
+    border-radius: 5px; /* Rounded edges */
+    margin: 5px 10px; /* Add spacing between items */
+    transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+/* Logo or header at the top of the sidenav */
+.sidenav h1 {
+    color: #ecf0f1;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 10px;
+}
+
+/* Main content section */
+.main {
+    margin-left: 260px; /* Same as sidenav width + margin */
+    padding: 20px; /* Add padding for content */
+    background-color: #ecf0f1; /* Light grey background for content */
+    min-height: 100vh; /* Ensure it covers full screen height */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 200px; /* Narrower sidenav for smaller screens */
+    }
+    .main {
+        margin-left: 210px; /* Adjust content margin */
+    }
+    .sidenav a {
+        font-size: 16px; /* Smaller font size for links */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+.logout-button {
+    background-color: #d9534f; /* Red */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.logout-button:hover {
+    background-color: #c12e2a; /* Darker red */
+    color: white;
+}
+.message {
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    padding: 10px;
+    border: 1px solid #c3e6cb; /* Border green */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.floating-notification {
+    position: fixed;
+  
+    right: 20px;
+    background-color: #d4edda; /* Light green */
+    color: #155724; /* Dark green */
+    padding: 15px;
+    border: 1px solid #c3e6cb; /* Border green */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 16px;
+    animation: fadeIn 0.5s ease;
+}
+
+.floating-notification button {
+    margin-left: 15px;
+    background-color: transparent;
+    color: #155724;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.floating-notification button:hover {
+    color: #0c3c13;
+}
+
+/* Optional animation for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.logo-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px; 
+}
