@@ -1,0 +1,13 @@
+[10-Mar-2025 01:33:10 UTC] PHP Warning:  Undefined array key "leave_with_pay" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 93
+[10-Mar-2025 01:33:10 UTC] PHP Warning:  Undefined array key "overtime" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 97
+[10-Mar-2025 01:33:10 UTC] PHP Warning:  Undefined array key "night_diff" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 99
+[10-Mar-2025 01:33:10 UTC] PHP Warning:  Undefined array key "hdmf_contribution" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 118
+[10-Mar-2025 01:33:10 UTC] PHP Warning:  Undefined array key "hdmf_loan" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 124
+[10-Mar-2025 01:33:10 UTC] PDF saved to: C:\xampp\htdocs\employee_evaluation//pdfs/payslip_Jhon Rey_Alarcon.pdf
+[10-Mar-2025 01:36:23 UTC] PHP Warning:  Undefined array key "leave_with_pay" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 93
+[10-Mar-2025 01:36:23 UTC] PHP Warning:  Undefined array key "overtime" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 97
+[10-Mar-2025 01:36:23 UTC] PHP Warning:  Undefined array key "night_diff" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 99
+[10-Mar-2025 01:36:23 UTC] PHP Warning:  Undefined array key "hdmf_contribution" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 118
+[10-Mar-2025 01:36:23 UTC] PHP Warning:  Undefined array key "hdmf_loan" in C:\xampp\htdocs\employee_evaluation\download_payslip.php on line 124
+[10-Mar-2025 01:39:13 UTC] PDF download initiated for: payslip_Jhon Rey_Alarcon.pdf
+[10-Mar-2025 01:46:38 UTC] PDF download initiated for: payslip_Jhon Rey_Alarcon.pdf

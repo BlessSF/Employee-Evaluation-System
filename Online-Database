@@ -1,0 +1,5 @@
+82.197.82.140', 'u731964465_employee', 'Nisekoi2023', 'u731964465_employee
+
+$conn = new mysqli("82.197.82.140", "u731964465_employee", "Nisekoi2023", "u731964465_employee");
+
+// Check connectio
